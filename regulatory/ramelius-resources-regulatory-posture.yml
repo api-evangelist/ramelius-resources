@@ -1,0 +1,76 @@
+generated: '2026-10-22'
+method: searched
+probe: true
+source: https://www.rameliusresources.com.au/privacy-policy/
+note: >-
+  Ramelius Resources Limited is an ASX-listed Australian gold miner with no public API or developer
+  program. Its only published legal/trust page found is the Privacy Policy (linked from the homepage
+  footer), which is framed against the Australian Privacy Principles under the Privacy Act 1988 (Cth).
+  No terms of service, subprocessor list, trust center, accessibility statement or AI disclosure was
+  linked from the site. Signals below come only from that one page.
+signals:
+  data_subject_request:
+    url: https://www.rameliusresources.com.au/privacy-policy/
+    section: 'Access, correction and complaints'
+    channel: 'In writing to The Privacy Officer, Ramelius Resources Limited, PO Box 6070 East Perth 6892'
+    stated_sla: 'A response to all requests or complaints will be provided as soon as reasonably practicable.'
+    rights_named: [access, correction, complaint]
+    evidence:
+    - source: https://www.rameliusresources.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        An individual may contact the Company to request access to personal information that the Company
+        holds about the individual, seek correction to that personal information, or to make a complaint
+        about a breach of the APPs by the Company. Such requests or complaints should be made in writing
+        and addressed to the Company’s Privacy Officer, using the details set out below.
+    - source: https://www.rameliusresources.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        A response to all requests or complaints will be provided as soon as reasonably practicable. A fee
+        may apply to recover reasonable costs of making personal information available to an individual.
+    note: >-
+      A written request channel for access, correction and complaints under the APPs, with no fixed
+      response deadline ("as soon as reasonably practicable") and a possible cost-recovery fee. Deletion
+      and portability are not named as rights; the policy also lists grounds on which access may be denied.
+  data_retention:
+    url: https://www.rameliusresources.com.au/privacy-policy/
+    section: 'Storage of personal information'
+    evidence:
+    - source: https://www.rameliusresources.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        The Company will also take reasonable steps to ensure that personal information it holds is
+        destroyed or permanently de-identified when it is no longer needed for any purpose for which the
+        Company may legitimately use or disclose it and it is no longer required to be held as a matter of law.
+    note: >-
+      A purpose-limited retention principle (destroy or de-identify when no longer needed and not legally
+      required). No retention periods or schedule are stated.
+  data_residency:
+    url: https://www.rameliusresources.com.au/privacy-policy/
+    section: 'Use and disclosure of personal information'
+    evidence:
+    - source: https://www.rameliusresources.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'The Company is unlikely to disclose information to overseas recipients.'
+    note: >-
+      The APP 8 cross-border disclosure statement: overseas disclosure is described as unlikely, not
+      excluded. No storage location or region commitment is made.
+  subprocessors:
+    url: https://www.rameliusresources.com.au/privacy-policy/
+    section: 'Use and disclosure of personal information'
+    evidence:
+    - source: https://www.rameliusresources.com.au/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        The Company may disclose personal information to third parties where it is required for the
+        operation of its business, for example providers of services to the Company, professional advisers
+        and related bodies corporate of the Company. The Company requires its service providers to keep
+        personal information confidential and not use it for any purpose other than performing those services.
+    note: >-
+      Service providers receive personal information under confidentiality and purpose-limitation
+      requirements, but they are described only by category. No named subprocessor list is published.

@@ -1,23 +1,86 @@
 aid: ramelius-resources
+
 name: Ramelius Resources
-description: 'Ramelius Resources is a company surfaced via the API Evangelist harvest backlog (source:
-  australia-apidays-2026) and added to the network as a stub for full-pipeline profiling.'
+
+description: Ramelius Resources Limited is an ASX-100 Australian gold producer that describes itself as "a sustainable gold
+  producer that safely delivers superior value for stakeholders." Its Western Australian assets include the Mt Magnet Hub
+  (Dalgaranga, Cue, Galaxy, Penny, Eridanus), the Edna May Mine and the Rebecca-Roe Project. The company website (rameliusresources.com.au)
+  covers investors, sustainability, careers and suppliers; it publishes no developer portal, public API or API documentation.
+
 url: https://raw.githubusercontent.com/api-evangelist/ramelius-resources/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Gold Mining
+- Mining
+- Natural Resources
+- Western Australia
+- ASX
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.rameliusresources.com.au/wp-content/uploads/2026/01/cue_image05.jpg
+
 common:
+- type: Hosts
+  url: hosts/ramelius-resources-hosts.yml
+- type: Vendors
+  url: vendors/ramelius-resources-vendors.yml
+- type: DomainSecurity
+  url: security/ramelius-resources-domain-security.yml
 - type: Website
-  url: https://rameliusresources.com.au/
+  url: https://www.rameliusresources.com.au/
+- type: About
+  url: https://www.rameliusresources.com.au/about-us/
+- type: Investors
+  url: https://www.rameliusresources.com.au/investors/
+- type: Support
+  url: https://www.rameliusresources.com.au/contact/
+- type: PrivacyPolicy
+  url: https://www.rameliusresources.com.au/privacy-policy/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/ramelius-resources-limited/
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: no-public-api
+  detail: Identity verified from the company site (title "Home - Ramelius Resources"). Gold mining company; no developer portal,
+    API docs, pricing, terms of service, blog or GitHub org linked from the site.
+  evidence:
+  - url: https://www.rameliusresources.com.au/
+    status: 200
+  - url: https://www.rameliusresources.com.au/about-us/
+    status: 200
+  - url: https://www.rameliusresources.com.au/investors/
+    status: 200
+  - url: https://www.rameliusresources.com.au/contact/
+    status: 200
+  - url: https://www.rameliusresources.com.au/privacy-policy/
+    status: 200
+  - url: https://www.linkedin.com/company/ramelius-resources-limited/
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

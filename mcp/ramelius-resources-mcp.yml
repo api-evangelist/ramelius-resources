@@ -1,0 +1,18 @@
+name: Ramelius Resources MCP Server
+type: MCPServer
+generated: '2026-10-22'
+method: none
+status: none
+description: >-
+  No official or community MCP server for Ramelius Resources was found. No candidate
+  tool list was derived because the company publishes no OpenAPI or other API contract
+  (pre-flight contract discovery on rameliusresources.com.au and www.rameliusresources.com.au
+  found no OpenAPI, AsyncAPI, GraphQL or MCP endpoint).
+source:
+  - https://rameliusresources.com.au/
+  - 'WebSearch 2026-10-22: "Ramelius Resources" MCP server OR API developer (no relevant results)'
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []

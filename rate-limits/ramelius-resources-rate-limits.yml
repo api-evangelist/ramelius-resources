@@ -1,0 +1,7 @@
+name: Ramelius Resources rate limits
+generated: '2026-10-22'
+method: none
+source: https://www.rameliusresources.com.au/
+limit_count: 0
+note: No public API or API documentation is published, so no rate limits are documented.
+limits: []
